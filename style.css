@@ -1,0 +1,207 @@
+/* Reset margin og padding for alle elementer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #212020 90%, transparent 100%);    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    padding: 0 30px;
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    color: #887676;
+    text-decoration: none; /
+}
+
+.main-logo {
+    text-align: center;
+    margin-top: 20vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MlBR størrelse osv */
+.logo-title {
+    font-size: 128px; 
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Production størrelse and so on */
+.logo-subtitle {
+    font-size: 32px; 
+    font-weight: 300;
+    color: #666;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Centering af main logo */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh; 
+}
+
+.GalleryGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3%;
+    row-gap: 3%;
+    margin: 2%;
+}
+
+.GalleryItem1x1{
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.GalleryItem1x2{
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.GalleryItem2x1{
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.GalleryItem2x2{
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.GalleryItem3x1{
+    width: 100%;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.ImgFigure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.GalleryItem3x1 {
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100%; 
+}
+.ImgFigure {
+    margin: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ImgFigure:hover {
+    transform: scale(1.05);
+}
+
+.ImgFigure img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-me{
+    background-color: #204F77;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.about-me div{
+    padding-top: 5%;
+    margin-top: 5%;
+}
+
+.about-me div h2{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+.about-me div p{
+    text-align: center;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: x-large;
+}
+
+.about-me figure{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.about-me figure img{
+    width: 100%;
+    border-radius: 100%;
+    border-color: black;
+}
